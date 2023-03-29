@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um numero: <input type="number" name="n1" id="n1">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="per">
+
+    </div>
+
+    <script>
+        function clicar() {
+        var num = document.querySelector('input#n1')
+        var perg = document.querySelector('div#per')
+        var number = Number(num.value)
+        var a = number - 1
+        var b = number + 1
+
+        perg.innerHTML = `<p>O numero escolhido foi ${number}</p>`
+        perg.innerHTML += `<p>Seu sucessor é ${b}</p>`
+        perg.innerHTML += `<p>Seu antecessor é ${a}</p>`
+
+        }
+    </script>
+</body>
+</html>

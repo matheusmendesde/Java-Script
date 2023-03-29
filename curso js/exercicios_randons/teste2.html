@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um numero: <input type="number" name="num" id="num">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="escrita">
+
+    </div>
+
+    <script>
+        function clicar() {
+            var num = document.querySelector('input#num')
+            var res = document.querySelector('div#escrita')
+            var number = Number(num.value)
+            var a = number * 2
+            var b = number * 3
+            var c = number / 5
+
+            res.innerHTML = `<p>O dobro de ${number} é: ${a}</p>`
+            res.innerHTML += `<p>O triplo de ${number} é: ${b}</p>`
+            res.innerHTML += `<p>A divisão por 5 de ${number} é: ${c}</p>`
+        }
+    </script>
+</body>
+</html>
