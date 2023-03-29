@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(44, 157, 250);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: 50px 50px;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 20px;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.466);
+}
+
+#foto{
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+#res {
+    text-align: center;
+}
+
+p {
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
