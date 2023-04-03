@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            background-color: #75615b;
+            font: normal 15pt Arial;
+        }
+        
+        #contaner {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #res {
+            line-height: 30px;
+        }
+
+        h1, p {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <p>Digite um numero para saber sua tabuada: <input type="number" name="tab" id="tab"> 
+        <input type="button" value="Calcular" onclick="clicar()"></p>
+    
+    <div id="contaner">
+        <p id="res">
+        </p>
+    </div>
+
+    <script>
+        function clicar() {
+            var numero = document.getElementById('tab').value
+            var res = document.getElementById('res')
+
+            res.innerHTML = `${numero} X 1 = ${numero * 1} <br>`
+            res.innerHTML += `${numero} X 2 = ${numero * 2} <br>`
+            res.innerHTML += `${numero} X 3 = ${numero * 3} <br>`
+            res.innerHTML += `${numero} X 4 = ${numero * 4} <br>`
+            res.innerHTML += `${numero} X 5 = ${numero * 5} <br>`
+            res.innerHTML += `${numero} X 6 = ${numero * 6} <br>`
+            res.innerHTML += `${numero} X 7 = ${numero * 7} <br>`
+            res.innerHTML += `${numero} X 8 = ${numero * 8} <br>`
+            res.innerHTML += `${numero} X 9 = ${numero * 9} <br>`
+            res.innerHTML += `${numero} X 10 = ${numero * 10} <br>`
+
+        }
+    </script>
+</body>
+</html>
